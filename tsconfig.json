@@ -8,7 +8,7 @@
     "declaration": false,
     "importHelpers": true,
     "moduleResolution": "node",
-    "module": "es2020",
+    "module": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2015",
@@ -16,7 +16,7 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es2017",
+      "es2015",
       "dom"
     ]
   }
