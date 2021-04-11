@@ -1,0 +1,41 @@
+<div class="header">
+  <nav class="header_top">
+    <div class="header_menu">
+      <div class="header_menu_icon" routerLink="/">
+       <mat-icon>menu</mat-icon>
+       <!--  use only wnen @angulat/material is installed
+        for latest versions of angular
+        materialangular.io
+      -->
+      </div>
+      <img routerLink="/" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header_menu_logo" alt="">
+      <div class="header_menu_searchbar">
+        <input type="text" class="header_menu_input">
+        <div class="header_menu_searchbar_icon">
+          <mat-icon>search</mat-icon>
+        </div>
+      </div>
+      <div class="header_menu_signin">
+       <!-- <span (click)="signOut()"  class="header_menu_top_item" *ngIf="auth.isLoggedIn()"><strong>Hello,{{auth.getUser()}}</strong></span>
+        <span  routerLink="/logIn" class="header_menu_top_item" *ngIf="!auth.isLoggedIn()"><strong>Hello, Sign In</strong></span>-->
+        <span (click)="signOut()"  class="header_menu_top_item" ><strong>Hello</strong></span>
+        <span  routerLink="/logIn" class="header_menu_top_item" ><strong>Hello, Sign In</strong></span>
+        <span class="header_menu_bottom_item">Accounts & Lists</span>
+      </div>
+      <div routerLink="/logIn" class="header_menu_signin">
+        <span class="header_menu_top_item"><strong>Returns</strong></span>
+        <span class="header_menu_bottom_item">& Orders</span>
+      </div>
+      <div routerLink="/checkout" class="header_menu_cart">
+        <mat-icon>shopping_cart</mat-icon>
+        <span class="header_cart_number">{{shopping_cart.getCartLength()}}</span>
+      </div>
+    </div>
+  </nav>
+  <nav class="header_bottom">
+    <div class="header_bottom_location_text">
+      <span class="header_left_line_one"><strong>Deliver to</strong></span>
+      <span class="header_left_line_two">India</span>
+    </div>
+  </nav>
+</div>
